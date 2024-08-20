@@ -21,6 +21,7 @@ app.post('/chat_page', (req, res, next) => {
    
     if (req.body.user) {
         // Store the user name if it's provided
+        
        req.session.user_name = req.body.user;
     }
     let globaluser_name=req.session.user_name || 'anonymous'
