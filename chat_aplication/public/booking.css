@@ -1,0 +1,126 @@
+.main-header{
+    width:auto;
+    height:1.5rem;
+    padding: 15px;
+    background-color:rgb(24, 70, 108)
+}
+body{
+    padding:0;
+    margin:0;
+}
+.nav-topics a{
+    text-decoration: none;
+    color:rgb(89, 9, 239);
+    margin: 0 1rem;
+    font-size: 1.2rem;
+}
+.nav-topics{
+    height:100%;
+    /* when display is set as flex it creates a flex container and align-items:  
+    and justify-content:  are flex properties without flex they will not work;; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* hover when the cursor is placed on top active when the button is clicked */
+.nav-topics a:hover{
+    color:rgb(0, 0, 17)
+}
+.nav-topics a:active,
+.nav-topics a.active{
+    color: rgb(245, 240, 240);
+    background-color: brown;
+    /* we can increase the  register box size using padding  */
+    padding: 5px 10px;
+}
+.bigcontainer{
+    display: flex;
+    margin:0;
+    padding: 0;
+    height: 92.3vh;
+    /* align-items: center; */
+    justify-content: center;
+    
+    background-image: url('https://w0.peakpx.com/wallpaper/683/262/HD-wallpaper-hotel-booking-online-reservation-mobile-application-for-renting-3050891-vector-art-at-vecteezy.jpg'); /* Path to your background image */
+    background-size: cover; /* Ensures the image covers the whole page */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+.container{
+   
+    padding: 5px;
+    background-color: rgb(251, 253, 253);
+    border-radius: 5px;
+    margin-bottom: 40vh;
+}
+.form_header{
+    text-align: center;
+}
+#book-slot {
+    border-bottom: 2px solid black; /* Adds a solid black line below the paragraph */
+    padding-bottom: 10px; /* Adds some space between the text and the line */
+    margin-bottom: 20px; /* Adds some space below the line */
+}
+.form-control label,
+.form-control label{
+    display:block;
+    width: 80vh;
+    
+}
+.formbody{
+    margin-bottom: 0;
+}
+#name{
+    width: 700px; /* Set the desired width in pixels */
+    padding: 5px; /* Add padding for better appearance */
+    margin-bottom: 4px; /* Add space below each input field */
+    border: 1px solid black; /* Add a border to match the button styles */
+    border-radius: 2px; /* Round the corners */
+    margin-bottom: 8px;
+}
+#email{
+    width: 700px; /* Set the desired width in pixels */
+    padding: 5px; /* Add padding for better appearance */
+    margin-bottom: 4px; /* Add space below each input field */
+    border: 1px solid black; /* Add a border to match the button styles */
+    border-radius: 2px; /* Round the corners */
+    margin-bottom: 8px;
+}
+#phone{
+    width: 700px; /* Set the desired width in pixels */
+    padding: 5px; /* Add padding for better appearance */
+    margin-bottom: 4px; /* Add space below each input field */
+    border: 1px solid black; /* Add a border to match the button styles */
+    border-radius: 2px; /* Round the corners */
+    margin-bottom: 8px;
+}
+
+
+.dateandtimeset label,
+.dateandtimeset input,
+.dateandtimeset select {
+    display: inline; /* Make elements inline-block to align them horizontally */
+    vertical-align: left; /* Vertically align the elements in the middle */
+    margin-right: 10px; /* Add space between elements */
+    margin-bottom: 8px;
+}
+
+.dateandtimeset input[type="date"],
+.dateandtimeset select {
+    width: 290px; /* Set a consistent width for the inputs and select */
+    padding: 8px; /* Add padding for better appearance */
+    border: 1px solid #ccc; /* Add border to match styling */
+    border-radius: 4px; /* Round the corners for a cleaner look */
+}
+#buttonid{
+    width: 700px; /* Set the desired width in pixels */
+    padding: 5px; /* Add padding for better appearance */
+    margin-bottom: 4px; /* Add space below each input field */
+    border: 1px solid black; /* Add a border to match the button styles */
+    border-radius: 2px; /* Round the corners */
+    margin-bottom: 8px;
+    background-color: brown;
+}
+
+
+

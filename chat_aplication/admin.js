@@ -1,5 +1,5 @@
 const express = require('express');
-let fs = require('fs');
+let fs = require("fs");
 const app = express();
 
 const bodyParser = require('body-parser');
@@ -12,11 +12,23 @@ app.use(session({
     saveUninitialized : false
 }))
 
+
+const path=require('path')
+
+//to provide css for the boooking page set the route
+app.use(express.static(path.join(__dirname,'public')));
+
 app.get('/admin', (req, res, next) => {
     res.send('<form action="/chat_page" method="POST"><input type="text" name="user" /><button>SUBMIT</button></form>');
 });
 
+app.get('/booking',(req,res,next)=>{
+    res.sendFile(path.join(__dirname,'htmlview','contact.html'))
+})
 
+app.post('/bookingconfirmed',(req,res,next)=>{
+    res.send("appointment booked");
+})
 app.post('/chat_page', (req, res, next) => {
    
     if (req.body.user) {
