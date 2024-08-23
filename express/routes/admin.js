@@ -1,11 +1,11 @@
 const express = require("express");
 const routered = express.Router();
 
+//creating a controller 
+const productcontroller=require('../controller/product')
+
 // Display the form at /add-product
-routered.get('/add-product', (req, res, next) => {
-  res.send('<form action="/admin/product" method="POST"><input type="text" name="title"/> <button>submit</button></form>');
-  
-});
+routered.get('/add-product',productcontroller.getcontroller);
 
 // Handle form submission
 routered.post('/product', (req, res, next) => { // Changed POST to post
